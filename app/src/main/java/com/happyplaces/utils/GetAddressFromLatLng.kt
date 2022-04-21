@@ -17,15 +17,6 @@ class GetAddressFromLatLng(
     private val longitude: Double
 ) : AsyncTask<Void, String, String>() {
 
-    /**
-     * Constructs a Geocoder whose responses will be localized for the
-     * given Locale.
-     *
-     * @param context the Context of the calling Activity
-     * @param locale the desired Locale for the query results
-     *
-     * @throws NullPointerException if Locale is null
-     */
     private val geocoder: Geocoder = Geocoder(context, Locale.getDefault())
 
     /**
